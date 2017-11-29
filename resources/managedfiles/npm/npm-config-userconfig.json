@@ -1,0 +1,8 @@
+[
+  {
+    "pattern": "git\.company\.com",
+    "id": "npm-settings-for-company-repository",
+    "name": "nexus.company.com npm respository",
+    "comment": "NPM settings for general read access to npm repostiroy npm.company.com"
+  }
+]

@@ -1,0 +1,8 @@
+[
+  {
+    "pattern": "git\.company\.com",
+    "id": "bundler-settings-for-company-repository",
+    "name": "bundler.company.com respository",
+    "comment": "Ruby/Bundler settings for general read access to bundler repostiroy bundler.company.com"
+  }
+]

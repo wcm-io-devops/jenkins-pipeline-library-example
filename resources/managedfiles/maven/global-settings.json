@@ -1,0 +1,8 @@
+[
+  {
+    "pattern": "git\.company\.com",
+    "id": "maven-global-settings-for-company",
+    "name": "Global maven settings",
+    "comment": "Global settings for general read access to nexus.company.com"
+  }
+]

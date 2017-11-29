@@ -1,0 +1,8 @@
+[
+  {
+    "pattern": "git\.company\.com",
+    "id": "npmrc-settings-for-company-repository",
+    "name": "npmrc company settings",
+    "comment": "NPMRC for company"
+  }
+]

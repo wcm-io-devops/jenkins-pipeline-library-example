@@ -1,0 +1,8 @@
+[
+  {
+    "pattern": "git\.company\.com[:/]client/project.git",
+    "id": "maven-local-settings-for-client",
+    "name": "Local maven settings for client",
+    "comment": "Local settings for write/deploy access to nexus.company.com for client projects"
+  }
+]
