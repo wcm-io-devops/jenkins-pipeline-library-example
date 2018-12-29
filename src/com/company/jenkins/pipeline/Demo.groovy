@@ -19,7 +19,7 @@
  */
 package com.company.jenkins.pipeline
 
-import io.wcm.tooling.jenkins.pipeline.utils.logging.Logger
+import io.wcm.devops.jenkins.pipeline.utils.logging.Logger
 
 /**
  * Demo class
