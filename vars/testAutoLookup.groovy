@@ -68,8 +68,13 @@ void testCredentialAutoLookup(Logger log, String scmUrl, String expectedId) {
   List<Credential> credentials = parser.parse(credentialJson)
   // try to find matching credential
   Credential credential = (Credential) matcher.getBestMatch(scmUrl, credentials)
-  log.info("Found credential for scm url '$scmUrl': '${credential.id}'")
-  assertEquals(log, expectedId, credential.id)
+  if(credential != null) {
+    log.info("Found credential for scm url '$scmUrl': '${credential.id}'")
+    assertEquals(log, expectedId, credential.id)
+  }
+  else {
+    log.info("no credintials for scm url '$scmUrl' found")  
+  }
 }
 
 void testManagedFileLookup(Logger log, String jsonPath, String scmUrl, String expectedId) {
@@ -83,8 +88,13 @@ void testManagedFileLookup(Logger log, String jsonPath, String scmUrl, String ex
   List<ManagedFile> managedFiles = parser.parse(managedFileJson)
   // try to find matching managed file
   ManagedFile managedFile = (ManagedFile) matcher.getBestMatch(scmUrl, managedFiles)
-  log.info("Found managed file for scm url '$scmUrl': '${managedFile.id}'")
-  assertEquals(log, expectedId, managedFile.id)
+  if(managedFile != null) {
+    log.info("Found managed file for scm url '$scmUrl': '${managedFile.id}'")
+    assertEquals(log, expectedId, managedFile.id)
+  }
+  else {
+    log.info("No managed file found for scm url '$scmUrl'")
+  }
 }
 
 void assertEquals(Logger log, String expectedId, String actualId) {
